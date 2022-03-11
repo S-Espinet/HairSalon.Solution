@@ -30,6 +30,7 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Stylist stylist)
     {
+      List<Client> clientModel = _db.Clients.Include(client => client.Stylist).ToList();
       _db.Stylists.Add(stylist);
       _db.SaveChanges();
       return RedirectToAction("Index");
