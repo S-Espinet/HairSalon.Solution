@@ -9,11 +9,9 @@
 {
   @Html.LabelFor(model => model.ClientName)
   @Html.TextBoxFor(model => model.ClientName)
-  @Html.ValidationMessageFor(model => model.ClientName)
   <br />
   @Html.LabelFor(model => model.ContactInfo)
   @Html.TextBoxFor(model => model.ContactInfo)
-  @Html.ValidationMessageFor(model => model.ContactInfo)
   <br />
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")
