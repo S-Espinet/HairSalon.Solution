@@ -1,0 +1,17 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h2>Stylist Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.StylistName): @Html.DisplayFor(model => model.StylistName)</h3>
+<br />
+<h3>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)</h3>
+<br />
+<!--<h2>@Html.DisplayNameFor(model.ClientName): @Html.DisplayFor(model => model.ClientName)</h2>-->
+<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("View Clients", "Index", "Items")</p>
+
+//need to display clients here
