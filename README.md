@@ -1,3 +1,24 @@
+# _Eau\_Claire's\_Salon_
+
+#### By _**S-Espinet**_
+
+#### _C# web application that tracks a salon's stylists and their clients._
+
+## Technologies Used
+
+* _C#_
+* _.NET5.0_
+* _Microsoft Entity Framework Core_
+* _MySQLWorkbench_
+* _SQL_
+* _C# HTML_
+* _Razor view engine_
+* _Bootstrap_
+
+## Description
+
+_This is a C# web application that tracks an imaginary salon's stylists and their clients by adding them and information about them to a database._
+
 ## GitHub Pages Link
 
 * _N/A_
@@ -25,6 +46,16 @@
 	*  _dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0_ 
 	* _dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2_ 
 	* _dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0_
+* _create appsettings.json file; if should appear as follows:_  
+
+	~~~
+{
+  "ConnectionStrings": {
+      "DefaultConnection":  "Server=localhost;Port=3306;database=sarah_espinet;uid=root;pwd=epicodus;"
+        }
+}
+~~~
+* _your appsettings.json file, and any auto-generated files/directories (bin, obj, .vscode) should be stored in your .gitignore file_
 * _run "dotnet run" in terminal from HairSalon directory_
 * _navigate to appropriate localhost location_
 * _respond to prompts in browser to add contents to your database_
